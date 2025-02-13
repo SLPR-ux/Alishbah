@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alishbah</title>
+    <link href="https://fonts.cdnfonts.com/css/romantic" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @import url('https://fonts.cdnfonts.com/css/romantic');
+      .fond {
+          position: absolute;
+          inset: 0;
+      }
+      
+      .fond::before {
+          content: "";
+          position: absolute;
+          inset: -500%;
+          rotate: -45deg;
+          background: #000000;
+          background-image: radial-gradient(
+              4px 100px at 0px 235px,
+              rgb(235, 17, 255),
+              #0000
+          ),
+          radial-gradient(4px 100px at 300px 235px, rgb(247, 0, 255), #884e2800),
+          radial-gradient(
+              1.5px 1.5px at 150px 117.5px,
+              rgb(255, 9, 243) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 252px, rgb(156, 14, 137), #0000),
+          radial-gradient(4px 100px at 300px 252px, rgb(23, 41, 206), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 126px,
+              rgb(247, 18, 236) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 150px, rgb(249, 16, 218), #0000),
+          radial-gradient(4px 100px at 300px 150px, rgb(255, 18, 223), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 75px,
+              rgb(255, 10, 222) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 253px, rgb(222, 17, 249), #0000),
+          radial-gradient(4px 100px at 300px 253px, rgb(201, 14, 248), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 126.5px,
+              rgb(244, 14, 252) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 204px, rgb(234, 18, 108), #0000),
+          radial-gradient(4px 100px at 300px 204px, rgb(255, 6, 222), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 102px,
+              rgb(247, 9, 255) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 134px, rgb(249, 9, 237), #0000),
+          radial-gradient(4px 100px at 300px 134px, rgb(251, 15, 133), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 67px,
+              rgb(255, 13, 203) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 179px, rgb(17, 222, 249), #0000),
+          radial-gradient(4px 100px at 300px 179px, rgb(253, 6, 199), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 89.5px,
+              rgb(234, 7, 204) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 299px, rgb(255, 0, 234), #0000),
+          radial-gradient(4px 100px at 300px 299px, rgb(0, 255, 200), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 149.5px,
+              rgb(255, 0, 234) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 215px, rgb(0, 255, 255), #0000),
+          radial-gradient(4px 100px at 300px 215px, rgb(76, 0, 255), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 107.5px,
+              rgb(255, 0, 200) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 281px, rgb(247, 0, 255), #0000),
+          radial-gradient(4px 100px at 300px 281px, rgb(255, 0, 191), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 140.5px,
+              rgb(255, 0, 212) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 158px, rgb(255, 0, 255), #0000),
+          radial-gradient(4px 100px at 300px 158px, rgb(255, 0, 119), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 79px,
+              rgb(255, 0, 242) 100%,
+              #0000 150%
+          ),
+          radial-gradient(4px 100px at 0px 210px, rgb(212, 0, 255), #0000),
+          radial-gradient(4px 100px at 300px 210px, rgb(255, 0, 200), #0000),
+          radial-gradient(
+              1.5px 1.5px at 150px 105px,
+              rgb(255, 0, 221) 100%,
+              #0000 150%
+          );
+          background-size:
+          300px 235px,
+          300px 235px,
+          300px 235px,
+          300px 252px,
+          300px 252px,
+          300px 252px,
+          300px 150px,
+          300px 150px,
+          300px 150px,
+          300px 253px,
+          300px 253px,
+          300px 253px,
+          300px 204px,
+          300px 204px,
+          300px 204px,
+          300px 134px,
+          300px 134px,
+          300px 134px,
+          300px 179px,
+          300px 179px,
+          300px 179px,
+          300px 299px,
+          300px 299px,
+          300px 299px,
+          300px 215px,
+          300px 215px,
+          300px 215px,
+          300px 281px,
+          300px 281px,
+          300px 281px,
+          300px 158px,
+          300px 158px,
+          300px 158px,
+          300px 210px,
+          300px 210px,
+          300px 210px;
+          animation: hi 150s linear infinite;
+      }
+      
+      @keyframes hi {
+          0% {
+          background-position:
+              0px 220px,
+              3px 220px,
+              151.5px 337.5px,
+              25px 24px,
+              28px 24px,
+              176.5px 150px,
+              50px 16px,
+              53px 16px,
+              201.5px 91px,
+              75px 224px,
+              78px 224px,
+              226.5px 350.5px,
+              100px 19px,
+              103px 19px,
+              251.5px 121px,
+              125px 120px,
+              128px 120px,
+              276.5px 187px,
+              150px 31px,
+              153px 31px,
+              301.5px 120.5px,
+              175px 235px,
+              178px 235px,
+              326.5px 384.5px,
+              200px 121px,
+              203px 121px,
+              351.5px 228.5px,
+              225px 224px,
+              228px 224px,
+              376.5px 364.5px,
+              250px 26px,
+              253px 26px,
+              401.5px 105px,
+              275px 75px,
+              278px 75px,
+              426.5px 180px;
+          }
+          to {
+          background-position:
+              0px 6800px,
+              3px 6800px,
+              151.5px 6917.5px,
+              25px 13632px,
+              28px 13632px,
+              176.5px 13758px,
+              50px 5416px,
+              53px 5416px,
+              201.5px 5491px,
+              75px 17175px,
+              78px 17175px,
+              226.5px 17301.5px,
+              100px 5119px,
+              103px 5119px,
+              251.5px 5221px,
+              125px 8428px,
+              128px 8428px,
+              276.5px 8495px,
+              150px 9876px,
+              153px 9876px,
+              301.5px 9965.5px,
+              175px 13391px,
+              178px 13391px,
+              326.5px 13540.5px,
+              200px 14741px,
+              203px 14741px,
+              351.5px 14848.5px,
+              225px 18770px,
+              228px 18770px,
+              376.5px 18910.5px,
+              250px 5082px,
+              253px 5082px,
+              401.5px 5161px,
+              275px 6375px,
+              278px 6375px,
+              426.5px 6480px;
+          }
+      }
+      .socket {
+        width: 650px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+        backdrop-filter: blur(10px);
+        border-radius: 35px;
+      }
+      .socket1 {
+        width: 80%;
+        max-width: 1200px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+        backdrop-filter: blur(10px);
+        border-radius: 35px;
+      }
+      p {
+        font-family: 'Romantic', sans-serif;
+        color: aliceblue;
+        font-size: 38px;
+        margin: 5% 15%;
+      }
+
+      .hex-brick {
+        background: #000000;
+        width: 30px;
+        height: 17px;
+        position: absolute;
+        top: 5px;
+        animation-name: fade00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: fade00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      .h2 {
+        transform: rotate(60deg);
+        -webkit-transform: rotate(60deg);
+      }
+
+      .h3 {
+        transform: rotate(-60deg);
+        -webkit-transform: rotate(-60deg);
+      }
+
+      .gel {
+        height: 30px;
+        width: 30px;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      .center-gel {
+        margin-left: -15px;
+        margin-top: -15px;
+        animation-name: pulse00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: pulse00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      .c1 {
+        margin-left: -47px;
+        margin-top: -15px;
+      }
+
+      .c2 {
+        margin-left: -31px;
+        margin-top: -43px;
+      }
+
+      .c3 {
+        margin-left: 1px;
+        margin-top: -43px;
+      }
+
+      .c4 {
+        margin-left: 17px;
+        margin-top: -15px;
+      }
+
+      .c5 {
+        margin-left: -31px;
+        margin-top: 13px;
+      }
+
+      .c6 {
+        margin-left: 1px;
+        margin-top: 13px;
+      }
+
+      .c7 {
+        margin-left: -63px;
+        margin-top: -43px;
+      }
+
+      .c8 {
+        margin-left: 33px;
+        margin-top: -43px;
+      }
+
+      .c9 {
+        margin-left: -15px;
+        margin-top: 41px;
+      }
+
+      .c10 {
+        margin-left: -63px;
+        margin-top: 13px;
+      }
+
+      .c11 {
+        margin-left: 33px;
+        margin-top: 13px;
+      }
+
+      .c12 {
+        margin-left: -15px;
+        margin-top: -71px;
+      }
+
+      .c13 {
+        margin-left: -47px;
+        margin-top: -71px;
+      }
+
+      .c14 {
+        margin-left: 17px;
+        margin-top: -71px;
+      }
+
+      .c15 {
+        margin-left: -47px;
+        margin-top: 41px;
+      }
+
+      .c16 {
+        margin-left: 17px;
+        margin-top: 41px;
+      }
+
+      .c17 {
+        margin-left: -79px;
+        margin-top: -15px;
+      }
+
+      .c18 {
+        margin-left: 49px;
+        margin-top: -15px;
+      }
+
+      .c19 {
+        margin-left: -63px;
+        margin-top: -99px;
+      }
+
+      .c20 {
+        margin-left: 33px;
+        margin-top: -99px;
+      }
+
+      .c21 {
+        margin-left: 1px;
+        margin-top: -99px;
+      }
+
+      .c22 {
+        margin-left: -31px;
+        margin-top: -99px;
+      }
+
+      .c23 {
+        margin-left: -63px;
+        margin-top: 69px;
+      }
+
+      .c24 {
+        margin-left: 33px;
+        margin-top: 69px;
+      }
+
+      .c25 {
+        margin-left: 1px;
+        margin-top: 69px;
+      }
+
+      .c26 {
+        margin-left: -31px;
+        margin-top: 69px;
+      }
+
+      .c27 {
+        margin-left: -79px;
+        margin-top: -15px;
+      }
+
+      .c28 {
+        margin-left: -95px;
+        margin-top: -43px;
+      }
+
+      .c29 {
+        margin-left: -95px;
+        margin-top: 13px;
+      }
+
+      .c30 {
+        margin-left: 49px;
+        margin-top: 41px;
+      }
+
+      .c31 {
+        margin-left: -79px;
+        margin-top: -71px;
+      }
+
+      .c32 {
+        margin-left: -111px;
+        margin-top: -15px;
+      }
+
+      .c33 {
+        margin-left: 65px;
+        margin-top: -43px;
+      }
+
+      .c34 {
+        margin-left: 65px;
+        margin-top: 13px;
+      }
+
+      .c35 {
+        margin-left: -79px;
+        margin-top: 41px;
+      }
+
+      .c36 {
+        margin-left: 49px;
+        margin-top: -71px;
+      }
+
+      .c37 {
+        margin-left: 81px;
+        margin-top: -15px;
+      }
+
+      .r1 {
+        animation-name: pulse00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .2s;
+        -webkit-animation-name: pulse00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .2s;
+      }
+
+      .r2 {
+        animation-name: pulse00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .4s;
+        -webkit-animation-name: pulse00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .4s;
+      }
+
+      .r3 {
+        animation-name: pulse00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .6s;
+        -webkit-animation-name: pulse00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .6s;
+      }
+
+      .r1 > .hex-brick {
+        animation-name: fade00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .2s;
+        -webkit-animation-name: fade00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .2s;
+      }
+
+      .r2 > .hex-brick {
+        animation-name: fade00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .4s;
+        -webkit-animation-name: fade00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .4s;
+      }
+
+      .r3 > .hex-brick {
+        animation-name: fade00;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: .6s;
+        -webkit-animation-name: fade00;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: .6s;
+      }
+
+      @keyframes pulse00 {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+
+        50% {
+          -webkit-transform: scale(0.01);
+          transform: scale(0.01);
+        }
+
+        100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fade00 {
+        0% {
+          background: #a200ff;
+        }
+
+        50% {
+          background: #ff0066;
+        }
+
+        100% {
+          background: #ff00d0;
+        }
+      }
+
+      .timer {
+        color: aliceblue;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px 32%;
+        border-radius: 35px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      #mess {
+        color: rgb(242, 64, 255);
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px 5%;
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        .socket {
+          width: 90%;
+          height: 300px;
+          top: 10%;
+        }
+        .socket1 {
+          width: 90%;
+          top: 60%;
+        }
+        p {
+          font-size: 24px;
+          margin: 5% 10%;
+        }
+        .timer {
+          font-size: 1.5rem;
+          padding: 5px 20%;
+        }
+        #mess {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .socket {
+          height: 250px;
+          top: 5%;
+        }
+        .socket1 {
+          top: 55%;
+        }
+        p {
+          font-size: 20px;
+          margin: 5% 5%;
+        }
+        .timer {
+          font-size: 1.2rem;
+          padding: 5px 10%;
+        }
+        #mess {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="fond">
+      <div class="socket">
+        <div class="timer" id="chronometer">Chargement...</div>
+        <div class="timer" id="mess">Que je t'aime ma princesse Alishbah</div>
+			<div class="gel center-gel">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c1 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c2 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c3 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c4 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c5 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c6 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			
+			<div class="gel c7 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			
+			<div class="gel c8 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c9 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c10 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c11 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c12 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c13 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c14 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c15 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c16 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c17 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c18 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c19 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c20 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c21 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c22 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c23 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c24 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c25 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c26 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c28 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c29 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c30 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c31 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c32 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c33 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c34 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c35 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c36 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c37 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			
+      </div>
+      <div class="socket1" id="contient le poeme">
+        <div class="poeme">
+          <p>Alishbah, souffle de l’aube et promesse du soir, <br>
+            Mystère délicat sous l’ombre d’un mouchoir, <br>
+            Beauté sculptée par les mains de l’éther, <br>
+            Femme-étoile, sirène née de la lumière. </p>
+            
+            <p>Son nom résonne comme une prière en or, <br>
+            Un écho suspendu dans un murmure encore, <br>
+            Doux comme la brise qui caresse les mers, <br>
+            Léger comme un rêve qu’embrasse l’univers. </p>
+            
+            <p>Sous son regard, tout s’éclipse et s’efface, <br>
+            Le monde s’incline, avide de grâce. <br>
+            Ses yeux, deux flammes aux reflets d’onyx, <br>
+            Éclairent la nuit d’un éclat féerique. </p>
+            
+            <p>Elle marche, et l’espace ploie sous ses pas, <br>
+            Comme si le vent lui obéissait déjà. <br>
+            Chaque mouvement est un art oublié, <br>
+            Un tableau vivant, un poème animé. </p>
+            
+            <p>Sa peau, un marbre aux reflets de velours, <br>
+            Un désert brûlant sous la pluie d’un jour. <br>
+            Lorsque l’ombre danse sur sa silhouette, <br>
+            L’univers lui-même retient sa quête. </p>
+            
+            <p>Son sourire, une lame douce et mortelle, <br>
+            Qui transperce l’âme, fragile étincelle. <br>
+            Un soupir, un éclat, un instant figé, <br>
+            Et l’éternité s’écrit dans sa beauté. </p>
+            
+            <p>Ses lèvres sont l’éclat d’un fruit interdit, <br>
+            Où le désir naît et s’épanouit. <br>
+            Elles murmurent des secrets sans fin, <br>
+            Elles sculptent le temps, effacent demain. </p>
+            
+            <p>Son cou, colonne où repose la grâce, <br>
+            Que le ciel pare d’un collier d’audace. <br>
+            Là où se posent des rêves en exil, <br>
+            Où s’égarent les âmes fragiles. </p>
+            
+            <p>Et son corps… Temple aux lignes sacrées, <br>
+            Éden où s’attardent mes pensées effrénées. <br>
+            Chaque courbe un poème, chaque souffle un frisson, <br>
+            Chaque battement une promesse d’abandon. </p>
+            
+            <p>Lorsque l’aurore effleure sa peau dorée, <br>
+            Le soleil jaloux voudrait s’y poser. <br>
+            Mais même l’astre s’incline en silence, <br>
+            Face à cette femme, divine évidence. </p>
+            
+            <p>Dans l’obscurité d’une nuit trop sage, <br>
+            Son ombre danse et défie les âges. <br>
+            Elle est l’éclair, l’averse, le vent, <br>
+            Elle est la passion, l’instant triomphant. </p>
+            
+            <p>Ô Alishbah, rêve entre mes pensées, <br>
+            Muse insaisissable, flamme envoûtée. <br>
+            Si je pouvais, d’un simple regard, <br>
+            Graver ton essence dans un rempart, </p>
+            
+            <p>J’en ferais un temple d’ivoire et d’or, <br>
+            Où les siècles viendraient encore, <br>
+            Réciter ton nom comme une prière, <br>
+            T’offrir l’éternité sur cette terre. </p>
+
+        </div>
+
+      </div>
+	</div>
+  <script>
+    // Définis la date de départ (AAAA, MM-1, JJ, HH, MM, SS)
+    const startDate = new Date(2024, 10, 26, 18, 38, 0); // Exemple: 1er Février 2024 à 12h00
+
+    function updateChronometer() {
+        const now = new Date();
+        let elapsedTime = Math.floor((now - startDate) / 1000); // Temps écoulé en secondes
+
+        let days = Math.floor(elapsedTime / (60 * 60 * 24));
+        let hours = Math.floor((elapsedTime % (60 * 60 * 24)) / (60 * 60));
+        let minutes = Math.floor((elapsedTime % (60 * 60)) / 60);
+        let seconds = elapsedTime % 60;
+
+        // Affiche le temps formaté
+        document.getElementById("chronometer").innerText = 
+            `${days}j ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // Met à jour toutes les secondes
+    setInterval(updateChronometer, 1000);
+    updateChronometer(); // Exécute immédiatement au chargement
+</script>
+</body>
+</html>
